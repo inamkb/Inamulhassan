@@ -1,0 +1,118 @@
+<Html>  
+    <head>   
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <style>  
+        body{  
+          font-family: Calibri, Helvetica, sans-serif;  
+          background-color: floralwhite;  
+        }  
+        .container {  
+            padding: 50px;  
+          background-color: cornflowerblue;  
+        }  
+          
+        input[type=text], input[type=password], textarea {  
+          width: 100%;  
+          padding: 15px;  
+          margin: 5px 0 22px 0;  
+          display: inline-block;  
+          border: none;  
+          background: #f1f1f1;  
+        }  
+        input[type=text]:focus, input[type=password]:focus {  
+          background-color: khaki;  
+          outline: none;  
+        }  
+         div {  
+                    padding: 10px 0;  
+                 }  
+        hr {  
+          border: 1px solid #1899d4;  
+          margin-bottom: 25px;  
+        }  
+        .registerbtn {  
+          background-color: #4CAF50;  
+          color: white;  
+          padding: 16px 20px;  
+          margin: 8px 0;  
+          border: none;  
+          cursor: pointer;  
+          width: 100%;  
+          opacity: 0.9;  
+        }  
+        .registerbtn:hover {  
+          opacity: 1;  
+        }  
+        </style>  
+        </head>  
+    <title>  
+    Registration form
+    </title>  
+    </head>  
+    <body bgcolor="Darkblue">  
+    <br>  
+    <br>  
+    <form>  
+
+    <div class="container">
+    <center><h1>Student Registration Form</Form></h1></center>    
+    <hr>
+    <label> Firstname </label>         
+    <input type="text" name="firstname" placeholder="First Name" size="15"/> <br> <br>  
+    <label> Middlename: </label>     
+    <input type="text" name="lastname" placeholder="Last Name" size="15"/> <br> <br>  
+      
+    <label>   
+      Semester :  
+      </label><br>  
+      <input type="radio" value="I" name="sem1" checked > I   
+      <input type="radio" value="II" name="sem2"> II   
+      <input type="radio" value="III" name="sem3"> III  
+      <input type="radio" value="IV" name="sem4"> IV   
+      <input type="radio" value="V" name="sem5"> V 
+      <input type="radio" value="VI" name="sem6"> VI   
+      </div>  
+    <br>  
+    <br>  
+    <div>  
+    <label>   
+    Division :  
+    </label><br>  
+    <input type="radio" value="A1" name="division1" checked > A1   
+    <input type="radio" value="A2" name="division2"> A2   
+    <input type="radio" value="A3" name="division3"> A3  
+    <input type="radio" value="A3" name="division4"> A4   
+    </div>  
+    <label>
+    Select Subject:
+    </label><br>
+    <input type="checkbox" id="Sub1" name="Sub1" value="ENGLISH">
+    <label for="Sub1"> ENGLISH </label><br>
+    <input type="checkbox" id="Sub2" name="Sub2" value="KANNADA">
+    <label for="Sub2"> KANNADA</label><br>
+    <input type="checkbox" id="Sub3" name="Sub3" value="ADV JAVA">
+    <label for="Sub3"> ADV JAVA</label><br>
+    <input type="checkbox" id="Sub4" name="Sub4" value="CLOUD COMPUTING">
+    <label for="Sub4"> CLOUD COMPUTING</label><br>
+    <input type="checkbox" id="Sub5" name="Sub5" value="COMPUTER NETWORK">
+    <label for="Sub5"> COMPUTER NETWORK</label><br>
+    <input type="checkbox" id="Sub6" name="Sub6" value="MTLR">
+    <label for="Sub6"> MTLR</label><br>
+      
+    <label>   
+    Phone :  
+    </label>  
+    <input type="text" name="Phone"  value="+91" size="10"/>   
+    <br> <br>  
+    College Name:  
+    <br>  
+    <textarea cols="80" rows="1" name="college" value="Enter College Name">  
+    </textarea>  
+    <br> <br>  
+    <div class="row">
+    <input type="submit" value="Registered" name="submit" onclick="SaveStudentDetails()">
+    </div>  
+    
+    </form>  
+    </body>  
+    </html>  
